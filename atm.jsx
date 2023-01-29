@@ -1,5 +1,5 @@
 const ATMDeposit = ({ onChange, isDeposit, isValid }) => {
-  const choice = ['Deposit', 'Cash Back'];
+  const choice = ['Deposit (+$)', 'Withdraw (-$)'];
   console.log(`ATM isDeposit: ${isDeposit}`);
   return (
     <label className="label huge">
@@ -54,7 +54,7 @@ const Account = () => {
     <form onSubmit={handleSubmit}>
       <>
         <h2 id="total">{status}</h2>
-        <label class="select">Select an action below to continue</label>
+        <label class="select">Use the dropdown to select your next action</label>
         <select onChange={(e) => handleModeSelect(e)} name="mode" id="mode-select">
           <option id="no-selection" value=""></option>
           <option id="deposit-selection" value="Deposit" class="deposit">
