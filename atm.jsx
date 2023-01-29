@@ -54,13 +54,13 @@ const Account = () => {
     <form onSubmit={handleSubmit}>
       <>
         <h2 id="total">{status}</h2>
-        <label>Select an action below to continue</label>
+        <label class="select">Select an action below to continue</label>
         <select onChange={(e) => handleModeSelect(e)} name="mode" id="mode-select">
           <option id="no-selection" value=""></option>
-          <option id="deposit-selection" value="Deposit">
+          <option id="deposit-selection" value="Deposit" class="deposit">
             Deposit
           </option>
-          <option id="cashback-selection" value="Cash Back">
+          <option id="cashback-selection" value="Cash Back" class="withdraw">
             Withdraw
           </option>
           </select>
