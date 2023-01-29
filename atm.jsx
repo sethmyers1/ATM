@@ -61,16 +61,17 @@ const Account = () => {
             Deposit
           </option>
           <option id="cashback-selection" value="Cash Back">
-            Cash Back
+            Withdraw
           </option>
-        </select>
-        {atmMode && (
+          </select>
+        
+          {atmMode && (
           <ATMDeposit
-            onChange={handleChange}
-            isDeposit={isDeposit}
-            isValid={validTransaction}
+          onChange={handleChange}
+          isDeposit={isDeposit}
+          isValid={validTransaction}
           ></ATMDeposit>
-        )}
+ )}
       </>
     </form>
   );
